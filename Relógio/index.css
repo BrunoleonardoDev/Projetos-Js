@@ -1,0 +1,99 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(220deg, #020024 0%, #090979 35%, #00d4ff 100%);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.relogio{
+    width: 700px;
+    height: 360px;
+    border-radius: 8px;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.555);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(40px);
+}
+
+.box{
+    background-color: black;
+    margin: 10px;
+    width: 200px;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.555);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+#horas, #minutos, #segundos{
+    font-size: 8rem;
+}
+
+#tempo{
+    font-size: 2rem;
+}
+
+.data{
+    width: 700px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(40px);
+    border-radius: 8px;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.555);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+@media (max-width: 820px) {
+
+    body{
+        background-image: linear-gradient(220deg, #560000 0%, #7e0a05 35%, #a6150a 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .relogio{
+        width: 380px;
+        height: 180px;
+    }
+    
+    .box{
+        width: 100px;
+        height: 150px;
+    }
+
+    #horas, #minutos, #segundos{
+        font-size: 4rem;
+    }
+    
+    #tempo{
+        font-size: 1rem;
+    }
+
+    .data{
+        width: 380px;
+
+    }
+}
+
