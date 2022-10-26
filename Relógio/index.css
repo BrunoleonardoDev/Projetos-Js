@@ -67,7 +67,7 @@ body {
 @media (max-width: 820px) {
 
     body{
-        background-image: linear-gradient(220deg, #560000 0%, #7e0a05 35%, #a6150a 100%);
+        background-image: linear-gradient(220deg, #009c3b 0%, #ffdf00 35%, #002776 100%);
         display: flex;
         align-items: center;
         justify-content: center;
