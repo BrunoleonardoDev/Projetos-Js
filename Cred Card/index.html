@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Cred Card</title>
+</head>
+
+<body>
+    <main>
+        <section class="card-front">
+            <div class="top">
+                <img src="image/mastercard_logo.png" alt="flag">
+                <img src="image/chip.png" alt="chip" id="chip">
+            </div>
+            <div class="bottom">
+                <h1 id="wName" >Bruno L L Oliveira</h1>
+                <img src="image/nubank_logo.png" alt="nubank-logo-2021" id="nu">
+                <div class="sobrepor"></div>
+            </div>
+        </section>
+        <section class="card-back">
+            <div class="tarja"></div>
+            <div class="nu-silver">
+                <img src="image/mastercard_logo_silver.png" alt="flag" id="master">
+
+                <div class="ultra">
+                    <img src="image/EMVCoContactlessIndicator.svg.png" alt="">
+                    <h1>ultravioleta</h1>
+                </div>
+            </div>
+            <div class="dados">
+                <span>Number Card</span>
+                <h1 id="wNumber" >0000 0000 0000 0000</h1>
+                <div class="sub-dados">
+                    <div class="cvv">
+                        <span>CVV</span>
+                        <h1 id="wCVV" >000</h1>
+                    </div>
+                    <div class="valid">
+                        <span>Valid</span>
+                        <h1 id="wMonth" >00/00</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <aside>
+            <img src="image/nubank_logo.png" alt="">
+            <div class="box_input">
+                <form>
+                    <div class="grid_2input">
+
+                        <!-- Name Card -->
+                        <input type="text" name="nameCard" id="nameCard" placeholder="name on card">
+
+                        <!-- Number Card -->
+                        <input type="number" name="numCard" id="numCard"
+                            onkeyup="if(this.value.length > this.maxLength) this.value=this.value.slice(0,this.maxLength)"
+                            placeholder="number card" minlength="16" maxlength="16" required>
+
+                    </div>
+                    <div class="info_back">
+
+                        <!-- Input Month -->
+                        <input type="number" name="mmCard" id="mmCard" oninput="if(this.value.length > this.maxLength) this.value=this.value.slice(0,this.maxLength)"
+                        placeholder="MM" minlength="12" maxlength="2" required>
+
+                        <!-- Input Year -->
+                        <input type="number" name="yyCard" id="yyCard" oninput="if(this.value.length > this.maxLength) this.value=this.value.slice(0,this.maxLength)"
+                        placeholder="YY" minlength="2" maxlength="2" required>
+                    </div>
+                    <div class="cvv">
+
+                        <!-- Input CVV -->
+                        <input type="number" name="cvvCod" id="cvvCode" oninput="if(this.value.length > this.maxLength) this.value=this.value.slice(0,this.maxLength)"
+                        placeholder="CVV" minlength="3" maxlength="3" required>
+                    </div>
+                    <button id="submit_btn" type="submit">Confirm</button>
+                </form>
+                <div class="thanks_hidden"></div>
+            </div>
+        </aside>
+        <div class="texture"></div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
