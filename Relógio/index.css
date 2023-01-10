@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url(bg-stars.svg);
+    /*background-image: url(bg-stars.svg);*/
     background-size: cover;
     background-color: #230334;
     background-repeat: no-repeat;
@@ -15,12 +15,22 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 body img {
-    position: absolute;
     top: 709px;
     width: 100%;
+    border: 1px solid white;
+}
+
+body video{
+    width: 100%;
+    h100%
+}
+
+main{
+    position: absolute;
 }
 
 .relogio {
@@ -36,7 +46,6 @@ body img {
 }
 
 .box {
-
     background-color: black;
     margin: 10px;
     width: 200px;
